@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'iori_register.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgres://dbname:ekkL74LNFdLRXd9OgjOk2GUVMiEZsV5f@dpg-clmegm1fb9qs739cf1o0-a/dbname_nzfw',
+        default='postgres://dbname:y1Qyy0VJI0tceUd7QfKPf5HuE3D4IS1k@dpg-clmgep1fb9qs739dald0-a/dbname_4iyk',
         conn_max_age=600
     )
 }
