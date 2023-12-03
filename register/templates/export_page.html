@@ -1,0 +1,22 @@
+<!-- export_page.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Export</title>
+
+</head>
+
+<body>
+    {% if user.is_authenticated and user.is_superuser %}
+    <h1>Bienvenido, {{ user.username }}!</h1>
+    <p><a href="{% url 'export_data_api' %}">Exportar data_set</a></p>
+    {% else %}
+    <h1>Inicia sesión como superusuario para exportar datos.</h1>
+    <a href="{% url 'admin:login' %}">Iniciar Sesión</a>
+    {% endif %}
+</body>
+
+</html>

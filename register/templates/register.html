@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoriBikerShop</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+
+    <div id="register">
+
+        <div class="formulario">
+            <form class="form" action="" method="POST">
+
+
+                <img src="{% static 'img/iori2.png' %}" alt="Imagen">
+                <h1>LOCOS POR LAS MOTOS</h1>
+
+                {% if success_message %}
+                <div class="success">
+                    <h3>{{ success_message }}</h3>
+                </div>
+                {% endif %}
+
+                {% if error_message %}
+                <div class="error">
+                    <h3>{{ error_message }}</h3>
+                </div>
+                {% endif %}
+
+                {%csrf_token%}
+                {{form}}
+                <button type="submit">ENVIAR</button>
+            </form>
+        </div>
+
+    </div>
+    <video muted autoplay loop>
+        <source src="{% static 'video/fondo.webm' %}" type="video/mp4">
+    </video>
+    <div class="capa"></div>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>
