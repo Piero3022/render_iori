@@ -154,9 +154,26 @@ video {
     mix-blend-mode: overlay;
 }
 
+option {
+    color: #1c1c1d;
+    font-weight: bold;
+}
 
-@media (max-width: 500px) {
+
+@media only screen and (max-width: 500px) {
     form {
-        width: 100%;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 1) 17%, rgba(253, 29, 29, 1) 68%, rgba(252, 176, 69, 1) 100%);
     }
+
+    label[for="id_subscription"] {
+        /* Estilos para el label con el atributo for="id_subscription" */
+        /* Por ejemplo: */
+        color: rgb(0, 0, 0);
+        /* Cambia el color del texto a rojo */
+        font-weight: bold;
+        /* Hace que el texto sea negrita */
+    }
+
+
 }
