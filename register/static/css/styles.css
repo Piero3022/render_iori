@@ -42,6 +42,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
+    z-index: 10;
 
 }
 
@@ -60,6 +61,7 @@ body {
     left: 50%;
     transform: translate(-50%);
     text-align: center;
+    z-index: 5;
 }
 
 .formulario h1,
@@ -189,13 +191,12 @@ input[type="checkbox"] {
 
 @media only screen and (max-width: 600px) {
     #register {
+        margin-top: -3rem;
         width: 100%;
         position: relative;
         height: auto;
         margin-bottom: 20px;
     }
-
-
 
     .formulario {
         width: 100%;
