@@ -32,8 +32,12 @@ body {
 }
 
 #register {
-    height: 650px;
-    position: absolute;
+    /*height: 650px;
+    position: absolute;*/
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    place-items: center;
 
 }
 
@@ -43,13 +47,12 @@ body {
     left: 50%;
     transform: translate(-50%);
 
-
 }
 
 .formulario {
     width: 400px;
-    position: absolute;
-    background: transparent;
+    /*position: absolute;
+    background: transparent;*/
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
@@ -61,7 +64,6 @@ body {
     left: 50%;
     transform: translate(-50%);
     text-align: center;
-
 }
 
 .formulario h1,
@@ -176,6 +178,7 @@ input[type="checkbox"] {
 #id_subscription td {
     display: flex;
     align-items: center;
+
 }
 
 #id_subscription label {
@@ -186,23 +189,4 @@ input[type="checkbox"] {
 #id_subscription input {
     flex: 1;
     margin-bottom: 0;
-}
-
-
-@media only screen and (max-width: 600px) {
-    #register {
-        width: 100%;
-        top: -40px;
-        position: relative;
-        height: auto;
-        margin-bottom: 20px;
-        left: 0%;
-        transform: translate(0%);
-    }
-
-    .formulario {
-        width: 100%;
-        max-width: none;
-        border-radius: 0;
-    }
 }
