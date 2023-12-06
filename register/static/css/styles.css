@@ -175,5 +175,9 @@ input[type="checkbox"] {
 
     #register {
         width: 100%;
+        top: auto;
+        position: absolute;
+        margin: 0%;
+        justify-content: center;
     }
 }
