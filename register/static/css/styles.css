@@ -104,6 +104,7 @@ select {
     border-color: black;
     background-color: #ff8c00;
     color: #fff;
+    font-weight: bold;
 }
 
 select {
@@ -160,30 +161,14 @@ option {
 }
 
 input[type="checkbox"] {
-    transform: scale(0.5);
-}
-
-
-#id_subscription th,
-#id_subscription td {
-    display: flex;
-    align-items: center;
-}
-
-#id_subscription label {
-    margin-bottom: 0;
-    margin-right: 10px;
-}
-
-#id_subscription input {
-    flex: 1;
-    margin-bottom: 0;
+    transform: scale(1.5);
 }
 
 
 @media only screen and (max-width: 600px) {
     form {
         background: linear-gradient(180deg, rgba(0, 0, 0, 1) 37%, rgba(253, 96, 29, 1) 64%, rgba(0, 0, 0, 1) 100%);
+        border-radius: 0;
     }
 
 }
