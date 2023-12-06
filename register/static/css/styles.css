@@ -170,22 +170,6 @@ input[type="checkbox"] {
     transform: scale(0.5);
 }
 
-#id_subscription th,
-#id_subscription td {
-    display: flex;
-    align-items: center;
-
-}
-
-#id_subscription label {
-    margin-bottom: 0;
-    margin-right: 10px;
-}
-
-#id_subscription input {
-    flex: 1;
-    margin-bottom: 0;
-}
 
 @media only screen and (max-width: 600px) {
 
