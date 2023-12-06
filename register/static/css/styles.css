@@ -42,14 +42,11 @@ body {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    max-width: 100%;
-    /**/
+
 }
 
 .formulario {
-    /*width: 400px;*/
-    width: 80%;
-    max-width: 400px;
+    width: 400px;
     position: absolute;
     background: transparent;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -173,19 +170,32 @@ input[type="checkbox"] {
     transform: scale(0.5);
 }
 
+#id_subscription th,
+#id_subscription td {
+    display: flex;
+    align-items: center;
+}
+
+#id_subscription label {
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+#id_subscription input {
+    flex: 1;
+    margin-bottom: 0;
+}
+
 
 @media only screen and (max-width: 600px) {
     #register {
         width: 100%;
-        top: auto;
         position: relative;
         height: auto;
         margin-bottom: 20px;
     }
 
-    #register img {
-        width: 100%;
-    }
+
 
     .formulario {
         width: 100%;
