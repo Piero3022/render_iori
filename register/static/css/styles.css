@@ -196,12 +196,13 @@ input[type="checkbox"] {
         position: relative;
         height: auto;
         margin-bottom: 20px;
+        left: 0%;
+        transform: translate(0%);
     }
 
     .formulario {
         width: 100%;
         max-width: none;
         border-radius: 0;
-        padding: 20px;
     }
 }
